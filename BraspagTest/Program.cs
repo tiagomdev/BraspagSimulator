@@ -18,12 +18,10 @@ namespace BraspagTest
             var service = new BraspagService();
 
 
-            Console.WriteLine("BRASPAG TEST");
+            Console.WriteLine("RequestPaymentCreditCard.......");
 
             try
             {
-                Console.WriteLine("RequestPaymentCreditCard.......");
-
                 var result = service.RequestPaymentCreditCard(command).GetAwaiter().GetResult();
 
                 Console.WriteLine("JSON RESULT: \n");
